@@ -1,8 +1,7 @@
-import * as Article from "../models/Article";
-import * as User from "../models/User";
-import fs from "fs";
+const Article = require("../models/Article");
+const User = require("../models/User");
+const fs = require("fs");
 import cloudinary from "cloudinary";
-import { textChangeRangeNewSpan } from "typescript";
 
 module.exports = {
   addArticle: (req, res, next) => {
