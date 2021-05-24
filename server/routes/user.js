@@ -8,7 +8,7 @@ module.exports = (router) => {
   router.route("/user/profile/:id").get(userController.getUserProfile);
 
   // adds a user
-  router.route.post(userController.addUser);
+  router.route("/user").post(userController.addUser);
 
   // follow a user
   router.route("/user/follow").post(userController.followUser);

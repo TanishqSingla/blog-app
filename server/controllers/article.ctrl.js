@@ -1,7 +1,7 @@
 const Article = require("../models/Article");
 const User = require("../models/User");
 const fs = require("fs");
-const cloudinary = requrie("cloudinary");
+const cloudinary = require("cloudinary");
 
 module.exports = {
   addArticle: (req, res, next) => {

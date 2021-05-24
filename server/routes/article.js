@@ -10,7 +10,7 @@ module.exports = (router) => {
   router.route("/article").post(multipart, articlecontroller.addArticle);
 
   // Clap on article
-  router.route.post(articlecontroller.clapArticle);
+  router.route("/article/clap").post(articlecontroller.clapArticle);
 
   // Comment on article
   router.route("/article/comment").post(articlecontroller.commentArticle);
